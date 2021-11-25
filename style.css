@@ -8,7 +8,7 @@ html {
 }
 
  .container {
-    background-image: url(./ressources/diceGame.jpg);
+    background-image: url(./images/diceGame.jpg);
     background-size: cover;
     opacity: 0.7;
     width: 100%;
