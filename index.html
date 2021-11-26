@@ -19,47 +19,52 @@
 </head>
 <body>
     <header>
-        <button type="button" class="btn btn-warning" id="btn">New game</button>
-        <!-- Button trigger modal -->
-<button type="button" class="btn2 btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Règles
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Règle du jeu de dé</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-warning" id="btn">New game</button>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn2 btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Règles
+      </button>
+    
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Règle du jeu de dé</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Le jeu comprend 2 joueurs sur un seul et même écran.<br>
+                Chaque joueur possède un score temporaire <b>(ROUND)</b> et un score global <b>(GLOBAL).</b><br>
+                A chaque tour, le joueur à son ROUND à 0 et peut lancer un dé autant de fois qu'il le souhaite.<br>
+                Le résultat d'un lancé est ajouté au ROUND.<br>
+                Lors de son tour, le joueur peut décidé à tout moment de : <br>
+                - Cliquer sur l'option "HOLD", qui permet d'envoyer les points du <b>ROUND</b> vers le <b>GLOBAL.</b><br>
+                - Lancer le dé, celui qui obtient un 1, son score ROUND est perdu et c'est la fin de son tour.<br>
+                Le premier joueur qui atteint les 100 points sur le GLOBAL gagne le jeu.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
     </header>
     <main>
-        <div class="container">
-            <section class="block-players">
-            
-                    <h2>Player 1</h2>
-                    <h3>00</h3>
-
-            </section>
-            <section class ="block-playersTwo">
-                <div class="playerTwo">
-                     <h2>Player 2</h2>
-                     <h3>00</h3>
-                 </div>
-            </section>
+      <section class="container">
+        <article class="block-players">
+          <h2>Player 1</h2>
+          <h3>00</h3>
+        </article>
+        <div class="dice">
+          <img src="images/dice6.png" alt="dé face6">
         </div>
-        
-        
+        <article class="block-playersTwo">
+          <h2>Player 2</h2>
+          <h3>00</h3>
+        </article>
+      </section>
     </main>
   <script src="app.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
