@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-      <button type="button" class="btn btn-warning" id="btn">New game</button>
+      <button type="button" class="btn btn-warning" id="newGame">New game</button>
       <!-- Button trigger modal -->
       <button type="button" class="btn2 btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Règles
@@ -53,20 +53,37 @@
     </header>
     <main>
       <section class="container">
-        <article class="block-players">
-          <h2>Player 1</h2>
-          <h3>00</h3>
-        </article>
+        <div class="block-players">
+          <h2 class="player1">Player 1</h2>
+          <h3 id="roundPlayerOne">00</h3>
+        </div>
         <div class="dice">
           <img src="images/dice6.png" alt="dé face6">
         </div>
-        <article class="block-playersTwo">
-          <h2>Player 2</h2>
-          <h3>00</h3>
-        </article>
+        <div class="block-playersTwo">
+          <h2 class="player2">Player 2</h2>
+          <h3 id="roundPlayerTwo">00</h3>
+        </div>
       </section>
+      <div class="global">
+        <div class="scorePlayerOne">
+          <h5 id="scoreGlobalP1">score global</h5>
+          <p>00</p>
+        </div>
+        <div class="rollDice">
+          <button id="roll">Lancer le dé</button>
+          <button id="hold">stocker</button>
+        </div>
+        <div class="scorePlayerTwo">
+          <h5 id="scoreGlobalP2">score global</h5>
+          <p>00</p>
+        </div>
+      </div>
     </main>
-  <script src="app.js"></script> 
+    <footer>
+    </footer>
+    
+  <script src="index.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
   crossorigin="anonymous"></script> 
