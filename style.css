@@ -12,16 +12,8 @@ main {
     height: 100vh;
     position: relative;
 }
- /*.container {
-    background-image: url(./images/diceGame.jpg);
-    background-size: cover;
-    opacity: 0.8;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}*/
 
- #btn  {
+ #newGame  {
 
     padding: 6px;
     font-size: 17px;
@@ -46,43 +38,100 @@ main {
     right: 32%;
     border-radius: 10%;
 
-}*
-.block-players {
+}
+.container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10em;
+}
+.block-players  {
     width: 30%;
     height: 40vh;
-    position: absolute;
-    top: 150px;
-    left: 100px;
     background-color: white;
     opacity: 0.66;
 }
 .block-playersTwo {
     width: 30%;
     height: 40vh;
-    position: absolute;
-    top: 150px;
-    right: 120px;
     background-color: white;
     opacity: 0.66;
 
 }
-article h2 {
+div h2 {
     font-family: "lato", sans-serif;
     text-align: center;
     font-size: 2.5rem;
     margin-top: 3rem;
     font-weight: bold ;
 }
-article h3 {
+div h3 {
     font-size: 4rem;
     text-align: center;
     margin-top: 2rem;
     color: rgb(231, 10, 10);
 }
 .dice {
-    display:inline-block;
-    margin-top: 200px;
-    margin-left: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+}
+.global {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 10px 120px ;
+}
+.scorePlayerOne {
+    width: 120px;
+    height: 130px;
+    background: #be4545;
+    padding: 15px;
+}
+.scorePlayerTwo {
+    width: 120px;
+    height: 130px;
+    background: #be4545;
+    padding: 15px;
+}
+h5 {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+.global p {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.rollDice {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+}
+#roll {
+    margin-bottom: 2em;
+    width: 110px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    background: hsl(64, 95%, 57%);
+    border-radius: 10%;
+
+}
+#hold {
+    margin-bottom:2em ;
+    width: 110px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    background: hsl(197, 70%, 59%);
+    border-radius: 10%;
+
 }
 
 
