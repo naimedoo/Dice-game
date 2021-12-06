@@ -24,6 +24,9 @@
       <button type="button" class="btn2 btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Règles
       </button>
+      <div class="result">
+        <p></p>
+      </div> 
     
       <!-- Modal -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -53,30 +56,30 @@
     </header>
     <main>
       <section class="container">
-        <div class="block-players">
-          <h2 class="player1">Player 1</h2>
+        <div id="blockPlayer" class="on">
+          <h2 class="player1" id="player1">Player 1</h2>
           <h3 id="roundPlayerOne">00</h3>
         </div>
         <div class="dice">
-          <img src="images/dice6.png" alt="dé face6">
+          <img src="imgDice/dice6.png" class="imgD" alt="dé face6">
         </div>
-        <div class="block-playersTwo">
-          <h2 class="player2">Player 2</h2>
+        <div id="blockPlayerTwo" class="off">
+          <h2 class="player2" id="player2">Player 2</h2>
           <h3 id="roundPlayerTwo">00</h3>
         </div>
       </section>
       <div class="global">
         <div class="scorePlayerOne">
-          <h5 id="scoreGlobalP1">score global</h5>
-          <p>00</p>
+          <h5>score global</h5>
+          <p id="totalP1">00</p>
         </div>
         <div class="rollDice">
-          <button id="roll">Lancer le dé</button>
+          <button id ="roll">Lancer le dé</button>
           <button id="hold">stocker</button>
         </div>
         <div class="scorePlayerTwo">
-          <h5 id="scoreGlobalP2">score global</h5>
-          <p>00</p>
+          <h5>score global</h5>
+          <p id="totalP2">00</p>
         </div>
       </div>
     </main>
